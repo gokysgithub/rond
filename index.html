@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatBoyRond</title>
-        <style>
+    <style>
+        /* Background styling */
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            background: linear-gradient(to bottom, #3498db, #e74c3c);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            animation: colorChange 10s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background: linear-gradient(to bottom, #3498db, #e74c3c);
+            }
+            100% {
+                background: linear-gradient(to bottom, #e74c3c, #3498db);
+            }
+        }
+
+        /* Your existing styles */
+        .follow-text {
+            font-size: 24px;
+            font-weight: bold;
             margin: 0;
         }
         
         .social-links {
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
         
         .social-links a {
-            margin: 0 10px;
+            margin: 0 5px;
         }
         
-        video {
-            width: 1350px;
-            height: 600px;
+        .additional-text {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        img {
+            width: 800px;
+            height: 450px;
         }
     </style>
 </head>
-</body>
-    <div style="margin-top: 20px;">
-        <a href="https://www.rond.cc" target="_blank">Personal Website</a> |
-        <a href="https://www.github.com/rondev" target="_blank">Github</a> |
+<body>
+    <p class="follow-text">Follow the links below</p>
+
+    <div class="social-links">
+        <a href="rond.cc" target="_blank">Personal Site </a> |
+         <a href="https://www.github.com/rondev" target="_blank">Github</a> |
         <a href="https://www.twitch.tv/ronddev" target="_blank">Twitch.tv</a>
     </div>
-    
-     <p class="additional-text">CatBoyRond</p>
+
+    <p class="additional-text">CatBoy rond</p>
 
     <img src="gif/catboyrond.gif" alt="Animated GIF">
+
 </body>
 </html>
