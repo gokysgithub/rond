@@ -4,16 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatBoyRond</title>
+    <link rel="stylesheet" href="styles.css">
+        <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+        }
+        
+        video {
+            width: 1350px;
+            height: 600px;
+        }
+    </style>
 </head>
-<body>
-    <video width="800" height="450" controls>
-        <source src="video/catboyrond.mp4" type="video/mp4">
-    </video>
-    
+</body>
     <div style="margin-top: 20px;">
         <a href="https://www.rond.cc" target="_blank">Personal Website</a> |
         <a href="https://www.github.com/rondev" target="_blank">Github</a> |
         <a href="https://www.twitch.tv/ronddev" target="_blank">Twitch.tv</a>
     </div>
+<body>
+    <video width="1350" height="600" controls autoplay>
+        <source src="videos/catboyrond.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
